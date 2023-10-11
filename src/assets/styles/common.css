@@ -1,0 +1,56 @@
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#__nuxt {
+    width: 100%;
+    height: 100%;
+}
+
+/* iphone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .fixed-footer {
+        bottom: env(safe-area-inset-bottom);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: env(safe-area-inset-bottom);
+        background-color: #fff;
+    }
+}
+
+/* iphone Xs Max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    .fixed-footer {
+        bottom: env(safe-area-inset-bottom);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: env(safe-area-inset-bottom);
+        background-color: #fff;
+    }
+}
+
+/*iphone XR*/
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    .fixed-footer {
+        bottom: env(safe-area-inset-bottom);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: env(safe-area-inset-bottom);
+        background-color: #fff;
+    }
+}
