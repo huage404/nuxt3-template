@@ -8,11 +8,11 @@ registerManifest();
 <template>
   <Html>
   <Body>
-  <NuxtLayout>
-    <n-config-provider :theme-overrides="themeOverrides">
+  <n-config-provider class="h-full" :theme-overrides="themeOverrides">
+    <NuxtLayout>
       <NuxtPage/>
-    </n-config-provider>
-  </NuxtLayout>
+    </NuxtLayout>
+  </n-config-provider>
 
   <footer class="footer fixed-footer"/>
   </Body>

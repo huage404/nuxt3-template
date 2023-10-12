@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   devtools: { enabled: true },
   modules: ['@unocss/nuxt', '@pinia/nuxt', '@vite-pwa/nuxt', '@nuxtjs/i18n'],
-  css: ['~/assets/styles/common.css'],
+  css: ['~/assets/styles/common.css', '@unocss/reset/tailwind-compat.css', 'driver.js/dist/driver.css'],
   pwa: {
     // 如果你想在 start_url 中自定义一些参数，那么你不应该在这里设置 manifest
     registerType: 'autoUpdate',
