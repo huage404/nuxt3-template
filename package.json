@@ -8,14 +8,18 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "generate-pwa-assets": "pwa-assets-generator "
+    "generate-pwa-assets": "pwa-assets-generator",
+    "lint": "eslint .",
+    "fix": "pnpm lint --fix"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/i18n": "8.0.0-rc.5",
     "@unocss/nuxt": "^0.56.5",
     "@vite-pwa/assets-generator": "^0.0.10",
     "@vite-pwa/nuxt": "^0.1.1",
+    "eslint": "^8.51.0",
     "naive-ui": "^2.35.0",
     "nuxt": "^3.7.4",
     "unplugin-vue-components": "^0.25.2",

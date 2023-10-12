@@ -7,14 +7,17 @@ registerManifest();
 
 <template>
   <Html>
-  <Body>
-  <n-config-provider class="h-full" :theme-overrides="themeOverrides">
-    <NuxtLayout>
-      <NuxtPage/>
-    </NuxtLayout>
-  </n-config-provider>
+    <Body>
+      <n-config-provider
+        class="h-full"
+        :theme-overrides="themeOverrides"
+      >
+        <NuxtLayout>
+          <NuxtPage />
+        </NuxtLayout>
+      </n-config-provider>
 
-  <footer class="footer fixed-footer"/>
-  </Body>
+      <footer class="footer fixed-footer" />
+    </Body>
   </Html>
 </template>
