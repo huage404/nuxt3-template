@@ -7,11 +7,14 @@
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "generate-pwa-assets": "pwa-assets-generator "
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@unocss/nuxt": "^0.56.5",
+    "@vite-pwa/assets-generator": "^0.0.10",
+    "@vite-pwa/nuxt": "^0.1.1",
     "naive-ui": "^2.35.0",
     "nuxt": "^3.7.4",
     "unplugin-vue-components": "^0.25.2",
