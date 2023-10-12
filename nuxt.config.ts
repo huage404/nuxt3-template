@@ -1,12 +1,12 @@
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
-import config from '~/config/index'
+import config from './src/config/index'
 
 export default defineNuxtConfig({
   // @ts-ignore
   srcDir: 'src/',
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', '@pinia/nuxt', '@vite-pwa/nuxt'],
+  modules: ['@unocss/nuxt', '@pinia/nuxt', '@vite-pwa/nuxt', '@nuxtjs/i18n'],
   css: ['~/assets/styles/common.css'],
   pwa: {
     // 如果你想在 start_url 中自定义一些参数，那么你不应该在这里设置 manifest
@@ -14,16 +14,17 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      skipWaiting: true,
+      clientsClaim: true
     },
-    client: {
-      installPrompt: true,
-    },
+    registerWebManifestInRouteRules: true,
     devOptions: {
       enabled: true,
-      suppressWarnings: true,
-      navigateFallbackAllowlist: [/^\/$/],
       type: 'module',
     },
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts'
   },
   app: {
     head: {

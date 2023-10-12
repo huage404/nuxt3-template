@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "8.0.0-rc.5",
     "@unocss/nuxt": "^0.56.5",
     "@vite-pwa/assets-generator": "^0.0.10",
     "@vite-pwa/nuxt": "^0.1.1",
