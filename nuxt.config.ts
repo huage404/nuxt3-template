@@ -10,6 +10,8 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/common.css', '@unocss/reset/tailwind-compat.css', 'driver.js/dist/driver.css'],
   pwa: {
     // 如果你想在 start_url 中自定义一些参数，那么你不应该在这里设置 manifest
+    mode: process.env.NUXT_NODE_ENV === 'production' ? 'production' : 'development',
+    strategies: 'generateSW',
     registerType: 'autoUpdate',
     workbox: {
       navigateFallback: '/',
@@ -19,7 +21,7 @@ export default defineNuxtConfig({
     },
     registerWebManifestInRouteRules: true,
     devOptions: {
-      enabled: true,
+      enabled: false,
       type: 'module',
     },
   },
