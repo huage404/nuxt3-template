@@ -12,9 +12,11 @@ registerManifest();
         class="h-full"
         :theme-overrides="themeOverrides"
       >
-        <NuxtLayout>
-          <NuxtPage />
-        </NuxtLayout>
+        <n-message-provider>
+          <NuxtLayout>
+            <NuxtPage />
+          </NuxtLayout>
+        </n-message-provider>
       </n-config-provider>
 
       <footer class="footer fixed-footer" />
